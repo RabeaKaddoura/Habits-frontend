@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#FDF8F2',
+        backgroundColor: '#FAFAFA',
     },
     formContainer: {
         width: '80%',
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
         marginBottom: 15,
     },
     loginButton: {
-        backgroundColor: '#A3B565',
+        backgroundColor: '#A3E4D7',
         padding: 10,
         borderRadius: 5,
         alignItems: 'center',

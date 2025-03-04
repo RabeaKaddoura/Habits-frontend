@@ -55,7 +55,7 @@ const UserSettings = ({ navigation }) => {
 const styles = StyleSheet.create({
 
     logInButton: {
-        backgroundColor: "#A3B565",
+        backgroundColor: "#A3E4D7",
         paddingHorizontal: 70,
         paddingVertical: 5,
         borderRadius: 5,
@@ -67,9 +67,9 @@ const styles = StyleSheet.create({
     },
 
     verticalView: {
-        flex: 1, // Add space between sections
-        backgroundColor: "#FDF8F2", // White background for sections
-        padding: 15, // Add padding inside sections
+        flex: 1,
+        backgroundColor: "#FAFAFA",
+        padding: 15,
 
     },
     label: {

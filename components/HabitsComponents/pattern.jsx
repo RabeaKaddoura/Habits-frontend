@@ -16,13 +16,13 @@ const LoadFont = () => {
 const Pattern = StyleSheet.create({
 
     container: {
-        backgroundColor: '#FDF8F2',
+        backgroundColor: '#FAFAFA',
         flex: 1,
     },
 
 
     bigBtn: {
-        backgroundColor: "#A3B565",
+        backgroundColor: "#A3E4D7",
         paddingHorizontal: 70,
         paddingVertical: 5,
         borderRadius: 5,
@@ -33,7 +33,7 @@ const Pattern = StyleSheet.create({
     },
 
     smallBtn: {
-        backgroundColor: "#A3B565",
+        backgroundColor: "#A3E4D7",
         height: 38,
         width: 150,
         paddingHorizontal: 10,
@@ -75,7 +75,6 @@ const Pattern = StyleSheet.create({
     greyBtnText: {
         fontSize: 20,
         color: 'white',
-
     },
 
     warnBtn: {
@@ -100,8 +99,8 @@ const Pattern = StyleSheet.create({
     desc: {
         fontSize: 14,
         color: '#666',
-        marginBottom: 10,
-        textAlign: 'center',
+        marginBottom: 6,
+        marginLeft: 5,
     },
 
     smallInput: {

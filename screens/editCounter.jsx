@@ -198,8 +198,9 @@ const EditCounter = ({ route, navigation }) => {
                 {Array.isArray(counter.validRewards) && counter.validRewards.length > 0 ? (
                     <View style={{ marginBottom: 20 }}>
                         <Text style={Pattern.label}> Rewards:</Text>
-
-                        {renderRewards()}
+                        <View style={styles.rewContainer}>
+                            {renderRewards()}
+                        </View>
                     </View>
                 ) : null}
 
@@ -234,7 +235,7 @@ const styles = StyleSheet.create({
     },
     verticalView: {
         flex: 1, // Add space between sections
-        backgroundColor: "#FDF8F2", // White background for sections
+        backgroundColor: "#FAFAFA", // White background for sections
         padding: 15, // Add padding inside sections
     },
 
@@ -259,6 +260,14 @@ const styles = StyleSheet.create({
         fontSize: 14,
         color: '#2D2D2D',
         fontFamily: 'SansMed'
+    },
+    rewContainer: {
+        height: 70,
+        padding: 6,
+        borderRadius: 7,
+        borderColor: '2D2D2D',
+        borderWidth: 0.2,
+
     }
 })
 

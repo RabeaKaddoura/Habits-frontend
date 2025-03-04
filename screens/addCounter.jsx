@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
     },
     verticalView: {
         flex: 1,
-        backgroundColor: "#FDF8F2", // White background for sections
+        backgroundColor: "#FAFAFA", // White background for sections
         padding: 15, // Add padding inside sections
         borderRadius: 8, // Rounded corners
         shadowColor: "#000",

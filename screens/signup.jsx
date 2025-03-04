@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#FDF8F2',
+        backgroundColor: '#FAFAFA',
     },
     formContainer: {
         width: '80%',
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
     signUpButton: {
         width: '100%',
         height: 38,
-        backgroundColor: "#A3B565",
+        backgroundColor: "#A3E4D7",
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 5,

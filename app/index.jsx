@@ -23,7 +23,7 @@ const Main = () => {
     if (!fontLoaded) {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <ActivityIndicator size="large" color="#A3B565" />
+                <ActivityIndicator size="large" color="#A3E4D7" />
                 <Text>Loading Fonts...</Text>
             </View>
         );

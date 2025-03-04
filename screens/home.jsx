@@ -202,17 +202,8 @@ const Home = ({ navigation }) => {
     }, []);
 
 
-    useEffect(() => { //once app opens, every two minutes counter values will be checked and incremented if needed.
-        const intervalId = setInterval(() => {
-            checkIncrement()
-        }, 120 * 1000);
-
-        // Cleanup function
-        return () => {
-            console.log("Clearing increment interval...");
-            clearInterval(intervalId);
-        };
-
+    useEffect(() => { //once app opens counter values will be checked and incremented if needed.
+        checkIncrement()
     }, []);
 
     useEffect(() => { //automatically syncs created counters with database
@@ -352,7 +343,7 @@ const styles = StyleSheet.create({
     },
 
     squareView: {
-        backgroundColor: "#A3B565",
+        backgroundColor: "#A3E4D7",
         height: 143,
         width: 143,
         elevation: 4,
@@ -364,7 +355,7 @@ const styles = StyleSheet.create({
     },
     listView: {
         flexDirection: 'row',
-        backgroundColor: "#A3B565",
+        backgroundColor: "#A3E4D7",
         height: 35,
         width: 350,
         elevation: 3,
@@ -374,7 +365,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
     },
     listViewNew: { //for "new counter +" button
-        backgroundColor: "#A3B565",
+        backgroundColor: "#A3E4D7",
         height: 35,
         width: 350,
         elevation: 3,
