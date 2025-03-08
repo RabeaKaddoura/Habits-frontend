@@ -92,9 +92,7 @@ const Login = ({ navigation }) => {
 
                 {/* Forgot Password and Sign Up Links */}
                 <View style={styles.linksContainer}>
-                    <TouchableOpacity>
-                        <Text style={styles.linkText}>Forgot Password?</Text>
-                    </TouchableOpacity>
+
                     <TouchableOpacity onPress={() => { navigation.navigate('Signup') }}>
                         <Text style={styles.linkText}>Sign Up</Text>
                     </TouchableOpacity>

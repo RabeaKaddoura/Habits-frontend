@@ -178,7 +178,10 @@ const Home = ({ navigation }) => {
         checkLoginStatus();
     }, []);
 
-
+    useEffect(() => { //once app opens counter values will be checked and incremented if needed.
+        console.log("checking increments...")
+        checkIncrement()
+    }, []);
 
     useEffect(() => { //stores the state of the chosen view (grid or list)
         if (!isLoadingView) {
@@ -202,9 +205,7 @@ const Home = ({ navigation }) => {
     }, []);
 
 
-    useEffect(() => { //once app opens counter values will be checked and incremented if needed.
-        checkIncrement()
-    }, []);
+
 
     useEffect(() => { //automatically syncs created counters with database
         if (isLoggedIn) {
