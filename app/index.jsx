@@ -10,6 +10,7 @@ import UserSettings from '../screens/userSettings';
 import { GlobalProvider } from '../screens/globalContext';
 import { useFonts } from 'expo-font';
 
+
 const Stack = createNativeStackNavigator();
 
 const Main = () => {
@@ -28,6 +29,7 @@ const Main = () => {
             </View>
         );
     }
+
 
     return (
         <GlobalProvider>

@@ -118,7 +118,6 @@ export const GlobalProvider = ({ children }) => { //this GlobalProvider is used 
             })
     }
 
-
     useEffect(() => { //should update persisted counter data whenever counter state array (temp storage) is changed
         if (!isLoadingCoun) {
             storeCounters(counters)
@@ -135,7 +134,8 @@ export const GlobalProvider = ({ children }) => { //this GlobalProvider is used 
     const sharedContext = {
         isLoggedIn, setIsLoggedIn, storeToken, removeToken, loadToken,
         token, userObj, setUserObj, storeUserObj, loadUserObj, makeRequest,
-        counters, setCounters, shownRewards, setShownRewards, clearCounters
+        counters, setCounters, shownRewards, setShownRewards, clearCounters,
+        isLoadingCoun
     }
 
     return (

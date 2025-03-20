@@ -14,7 +14,7 @@ const Home = ({ navigation }) => {
 
     const { isLoggedIn, loadToken,
         makeRequest, counters, setCounters, isLoadingCoun,
-        shownRewards, setShownRewards, setIsLoggedIn, loadUserObj, userObj } = useContext(GlobalContext)
+        shownRewards, setShownRewards, setIsLoggedIn, loadUserObj, userObj, } = useContext(GlobalContext)
 
     const [isGrid, setIsGrid] = useState(true) //switch between grid and list views
     const [isLoadingView, setIsLoadingView] = useState(true) //whether the chosen view (grid or list) is loading from storage or not
@@ -181,7 +181,7 @@ const Home = ({ navigation }) => {
     useEffect(() => { //once app opens counter values will be checked and incremented if needed.
         console.log("checking increments...")
         checkIncrement()
-    }, []);
+    }, [isLoadingCoun]);
 
     useEffect(() => { //stores the state of the chosen view (grid or list)
         if (!isLoadingView) {
@@ -209,14 +209,10 @@ const Home = ({ navigation }) => {
 
     useEffect(() => { //automatically syncs created counters with database
         if (isLoggedIn) {
-
             syncCounters();
         }
 
-
     }, [counters]);
-
-
 
 
     useEffect(() => { //checks if counter value is equal to rewards triggers
